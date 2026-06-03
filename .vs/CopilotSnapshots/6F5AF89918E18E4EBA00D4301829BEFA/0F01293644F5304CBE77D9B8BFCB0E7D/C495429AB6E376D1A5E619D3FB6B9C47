@@ -1,0 +1,100 @@
+﻿@model Kiemtragiuaki.Models.Course
+
+@{
+    ViewData["Title"] = Model.Name;
+    var isEnrolled = Model.Enrollments?.Any(e => e.User?.UserName == User.Identity?.Name) ?? false;
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>@Model.Name</h1>
+            <div class="mt-4">
+                @if (!string.IsNullOrEmpty(Model.Image))
+                {
+                    <img src="~/images/@Model.Image" class="img-fluid mb-4" style="max-height: 400px; object-fit: cover;" alt="@Model.Name" />
+                }
+                else
+                {
+                    <div style="height: 400px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <span class="text-muted">No Image Available</span>
+                    </div>
+                }
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Course Information</h5>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td><strong>Lecturer:</strong></td>
+                                <td>@Model.Lecturer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Credits:</strong></td>
+                                <td>@Model.Credit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Category:</strong></td>
+                                <td>@Model.Category?.Name</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Enrolled Students:</strong></td>
+                                <td>@(Model.Enrollments?.Count ?? 0)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Enrollment</h5>
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        @if (isEnrolled)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                You are enrolled in this course
+                            </div>
+                            <form method="post" asp-controller="Enrollments" asp-action="MyCourses">
+                                <button type="submit" class="btn btn-secondary w-100">View My Courses</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <p class="text-muted mb-3">Interested in this course? Click the button below to enroll.</p>
+                            <form method="post" asp-controller="Enrollments" asp-action="Enroll">
+                                <input type="hidden" name="courseId" value="@Model.Id" />
+                                <button type="submit" class="btn btn-primary w-100">Enroll Now</button>
+                            </form>
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted mb-3">You must be logged in to enroll in courses.</p>
+                        <a href="~/Identity/Account/Login" class="btn btn-primary w-100">Login to Enroll</a>
+                    }
+                </div>
+            </div>
+
+            @if (User.IsInRole("ADMIN"))
+            {
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Admin Actions</h5>
+                        <a href="@Url.Action("Edit", "Courses", new { id = Model.Id })" class="btn btn-warning btn-sm w-100 mb-2">Edit Course</a>
+                        <a href="@Url.Action("Delete", "Courses", new { id = Model.Id })" class="btn btn-danger btn-sm w-100">Delete Course</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <a href="@Url.Action("Index", "Courses")" class="btn btn-outline-secondary">Back to Courses</a>
+        </div>
+    </div>
+</div>

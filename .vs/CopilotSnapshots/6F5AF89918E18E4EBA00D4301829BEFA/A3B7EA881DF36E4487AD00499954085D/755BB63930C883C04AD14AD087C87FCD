@@ -1,0 +1,143 @@
+﻿@model IEnumerable<Kiemtragiuaki.Models.Course>
+
+@{
+    ViewData["Title"] = "Danh Sách Khóa Học";
+    var categories = ViewData["Categories"] as List<Kiemtragiuaki.Models.Category>;
+}
+
+<div class="container-fluid py-4" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h1 class="fw-bold mb-2">
+                    <i class="fas fa-book me-2" style="color: #667eea;"></i>Danh Sách Khóa Học
+                </h1>
+                <p class="text-muted">Duyệt qua các khóa học có sẵn và đăng ký khóa học mà bạn quan tâm</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Search and Filter Section -->
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <form method="get" class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold mb-2">
+                                <i class="fas fa-search me-2"></i>Tìm Kiếm
+                            </label>
+                            <input type="text" name="searchString" class="form-control form-control-lg" 
+                                   placeholder="Tìm khóa học theo tên hoặc giảng viên..." 
+                                   value="@ViewData["SearchString"]" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold mb-2">
+                                <i class="fas fa-filter me-2"></i>Danh Mục
+                            </label>
+                            <select name="categoryId" class="form-select form-select-lg">
+                                <option value="">-- Tất Cả Danh Mục --</option>
+                                @foreach (var category in categories)
+                                {
+                                    <option value="@category.Id" selected="@(ViewData["CategoryId"]?.ToString() == category.Id.ToString())">
+                                        @category.Name
+                                    </option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-search me-2"></i>Tìm Kiếm
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Grid -->
+    <div class="row">
+        @if (Model.Any())
+        {
+            @foreach (var course in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm course-card border-0">
+                        <div class="course-image-wrapper position-relative overflow-hidden" style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            @if (!string.IsNullOrEmpty(course.Image))
+                            {
+                                <img src="~/images/@course.Image" class="card-img-top w-100 h-100" style="object-fit: cover;" alt="@course.Name" />
+                            }
+                            else
+                            {
+                                <div class="d-flex align-items-center justify-content-center h-100">
+                                    <i class="fas fa-book fa-4x text-white opacity-50"></i>
+                                </div>
+                            }
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-warning text-dark">
+                                    <i class="fas fa-star me-1"></i>@course.Credit Tín Chỉ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-2">@course.Name</h5>
+                            <div class="course-meta mb-3">
+                                <p class="small text-muted mb-2">
+                                    <i class="fas fa-chalkboard-user me-2"></i><strong>Giáo Viên:</strong> @course.Lecturer
+                                </p>
+                                <p class="small text-muted mb-2">
+                                    <i class="fas fa-tag me-2"></i><strong>Danh Mục:</strong> @course.Category?.Name
+                                </p>
+                                <p class="small text-muted mb-0">
+                                    <i class="fas fa-users me-2"></i><strong>Sinh Viên:</strong> @(course.Enrollments?.Count ?? 0)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pt-0">
+                            <a href="@Url.Action("Details", "Courses", new { id = course.Id })" class="btn btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Xem Chi Tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-md-12">
+                <div class="alert alert-info text-center py-5" role="alert">
+                    <i class="fas fa-info-circle fa-2x mb-3"></i>
+                    <p class="mb-0">Không tìm thấy khóa học. Hãy thử điều chỉnh tiêu chí tìm kiếm của bạn.</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .course-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+    }
+
+    .course-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .course-image-wrapper {
+        position: relative;
+    }
+
+    .course-image-wrapper img {
+        transition: transform 0.3s ease;
+    }
+
+    .course-card:hover .course-image-wrapper img {
+        transform: scale(1.05);
+    }
+</style>

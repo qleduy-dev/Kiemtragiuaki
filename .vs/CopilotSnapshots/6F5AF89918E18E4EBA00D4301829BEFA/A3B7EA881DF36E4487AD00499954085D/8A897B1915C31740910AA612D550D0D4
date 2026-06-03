@@ -1,0 +1,90 @@
+﻿using Kiemtragiuaki.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Kiemtragiuaki.Controllers
+{
+    [Authorize(Roles = "STUDENT")]
+    public class EnrollmentsController : Controller
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<AspNetUser> _userManager;
+
+        public EnrollmentsController(ApplicationDbContext context, UserManager<AspNetUser> userManager)
+        {
+            _context = context;
+            _userManager = userManager;
+        }
+
+        // GET: My Courses - Student's enrolled courses
+        [AllowAnonymous]
+        public async Task<IActionResult> MyCourses()
+        {
+            var userId = _userManager.GetUserId(User);
+            if (userId == null)
+                return Redirect("/Identity/Account/Login");
+
+            var enrollments = await _context.Enrollments
+                .Where(e => e.UserId == userId)
+                .Include(e => e.Course)
+                .ThenInclude(c => c.Category)
+                .ToListAsync();
+
+            return View(enrollments);
+        }
+
+        // POST: Enrollments/Enroll
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Enroll(int courseId)
+        {
+            var userId = _userManager.GetUserId(User);
+            if (userId == null)
+                return Redirect("/Identity/Account/Login");
+
+            // Check if already enrolled
+            var existingEnrollment = await _context.Enrollments
+                .FirstOrDefaultAsync(e => e.UserId == userId && e.CourseId == courseId);
+
+            if (existingEnrollment != null)
+            {
+                TempData["Message"] = "You are already enrolled in this course.";
+                return RedirectToAction("Details", "Courses", new { id = courseId });
+            }
+
+            var enrollment = new Enrollment
+            {
+                UserId = userId,
+                CourseId = courseId,
+                EnrollDate = DateTime.Now
+            };
+
+            _context.Enrollments.Add(enrollment);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Successfully enrolled in course!";
+            return RedirectToAction("Details", "Courses", new { id = courseId });
+        }
+
+        // POST: Enrollments/Unenroll
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Unenroll(int enrollmentId)
+        {
+            var userId = _userManager.GetUserId(User);
+            var enrollment = await _context.Enrollments
+                .FirstOrDefaultAsync(e => e.Id == enrollmentId && e.UserId == userId);
+
+            if (enrollment == null)
+                return NotFound();
+
+            _context.Enrollments.Remove(enrollment);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Successfully unenrolled from course!";
+            return RedirectToAction("MyCourses");
+        }
+    }
+}

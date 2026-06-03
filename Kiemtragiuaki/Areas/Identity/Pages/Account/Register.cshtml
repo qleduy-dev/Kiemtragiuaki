@@ -1,0 +1,61 @@
+@page "/Identity/Account/Register"
+@using Kiemtragiuaki.Areas.Identity.Pages.Account
+@model RegisterModel
+@{
+    ViewData["Title"] = "Đăng Ký";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-user-plus fa-3x text-primary mb-3"></i>
+                        <h2 class="fw-bold mb-1">Đăng ký tài khoản sinh viên</h2>
+                        <p class="text-muted mb-0">Tài khoản mới sẽ tự động được gán quyền STUDENT</p>
+                    </div>
+
+                    <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Input.FullName" class="form-label fw-bold">Họ và tên</label>
+                            <input asp-for="Input.FullName" class="form-control" placeholder="Nhập họ và tên" />
+                            <span asp-validation-for="Input.FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Input.Email" class="form-label fw-bold">Email</label>
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="Nhập email" />
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Input.Password" class="form-label fw-bold">Mật khẩu</label>
+                            <input asp-for="Input.Password" class="form-control" autocomplete="new-password" placeholder="Tối thiểu 6 ký tự" />
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Input.ConfirmPassword" class="form-label fw-bold">Xác nhận mật khẩu</label>
+                            <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" placeholder="Nhập lại mật khẩu" />
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 btn-lg">
+                            <i class="fas fa-user-plus me-2"></i>Đăng ký
+                        </button>
+                    </form>
+                </div>
+                <div class="card-footer bg-white text-center py-3">
+                    Đã có tài khoản? <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="fw-bold">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

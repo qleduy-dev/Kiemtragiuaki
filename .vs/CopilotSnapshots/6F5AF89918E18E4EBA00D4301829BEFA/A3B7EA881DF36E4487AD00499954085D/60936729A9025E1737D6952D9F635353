@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <div class="jumbotron bg-light p-5 rounded">
+                <h1 class="display-4">Welcome to Course Registration</h1>
+                <p class="lead">Discover, enroll, and manage your courses with ease</p>
+                <hr class="my-4" />
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <p>Hello, @User.Identity.Name! What would you like to do today?</p>
+                    @if (User.IsInRole("STUDENT"))
+                    {
+                        <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Courses")" role="button">Browse Courses</a>
+                        <a class="btn btn-outline-primary btn-lg" href="@Url.Action("MyCourses", "Enrollments")" role="button">My Courses</a>
+                    }
+                    @if (User.IsInRole("ADMIN"))
+                    {
+                        <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Courses")" role="button">Manage Courses</a>
+                        <a class="btn btn-outline-primary btn-lg" href="@Url.Action("Create", "Courses")" role="button">Add New Course</a>
+                    }
+                }
+                else
+                {
+                    <p>Sign in or create an account to get started with course registration.</p>
+                    <a class="btn btn-primary btn-lg" href="~/Identity/Account/Register" role="button">Register Now</a>
+                    <a class="btn btn-outline-primary btn-lg" href="~/Identity/Account/Login" role="button">Sign In</a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <h5 class="card-title">📚 Browse Courses</h5>
+                    <p class="card-text">Explore a wide variety of courses across different categories and find the ones that match your interests.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <h5 class="card-title">✅ Easy Enrollment</h5>
+                    <p class="card-text">Quickly enroll in courses with just one click and start your learning journey.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <h5 class="card-title">📊 Manage Courses</h5>
+                    <p class="card-text">Keep track of your enrolled courses and view all the details you need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    @if (!(User.Identity?.IsAuthenticated ?? false))
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Ready to start learning?</h5>
+                        <p class="card-text">Join thousands of students already registered in our courses.</p>
+                        <a href="~/Identity/Account/Register" class="btn btn-light">Create Your Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

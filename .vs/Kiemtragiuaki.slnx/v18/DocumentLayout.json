@@ -1,0 +1,765 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Net\\Kiemtragiuaki\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\FULL_FLOW_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_FLOW_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\FLOW_FIX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_REPORT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\QUICK_REFERENCE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\README_FIXES.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\TESTING_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\ARCHITECTURE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\AUTHENTICATION_FIXES.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\UI_UX_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\QUICKSTART.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\IMPLEMENTATION_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_CHECKLIST.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\TROUBLESHOOTING.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\INDEX.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\PROJECT_COMPLETION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\STARTUP_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\VERIFICATION_REPORT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Kiemtragiuaki\\Kiemtragiuaki\\FINAL_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\enrollments\\mycourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\enrollments\\mycourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\kiemtragiuaki.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\kiemtragiuaki.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|c:\\net\\kiemtragiuaki\\kiemtragiuaki\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4687529C-583E-1041-B04B-262F5BBAB534}|Kiemtragiuaki\\Kiemtragiuaki.csproj|solutionrelative:kiemtragiuaki\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:59:12.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Login.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Login.cshtml",
+              "ToolTip": "C:\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Login.cshtml",
+              "RelativeToolTip": "..\\..\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:59:03.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:58:58.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Register.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Register.cshtml",
+              "ToolTip": "C:\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Register.cshtml",
+              "RelativeToolTip": "..\\..\\Users\\huynh\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\179849746\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:58:51.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SUMMARY.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\SUMMARY.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\SUMMARY.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\SUMMARY.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:53:46.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:47:57.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\README.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\README.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\README.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:30:55.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FULL_FLOW_GUIDE.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FULL_FLOW_GUIDE.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FULL_FLOW_GUIDE.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FULL_FLOW_GUIDE.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FULL_FLOW_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T07:00:37.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FIX_FLOW_SUMMARY.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_FLOW_SUMMARY.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_FLOW_SUMMARY.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_FLOW_SUMMARY.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_FLOW_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T07:00:12.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:47:03.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FLOW_FIX.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FLOW_FIX.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FLOW_FIX.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FLOW_FIX.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FLOW_FIX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:59:51.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:59:17.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "COMPLETION_REPORT.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_REPORT.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_REPORT.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_REPORT.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_REPORT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:53:11.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QUICK_REFERENCE.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\QUICK_REFERENCE.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\QUICK_REFERENCE.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\QUICK_REFERENCE.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\QUICK_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:52:39.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "README_FIXES.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\README_FIXES.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\README_FIXES.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\README_FIXES.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\README_FIXES.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:52:20.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TESTING_GUIDE.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\TESTING_GUIDE.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\TESTING_GUIDE.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\TESTING_GUIDE.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\TESTING_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:51:32.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ARCHITECTURE.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\ARCHITECTURE.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\ARCHITECTURE.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\ARCHITECTURE.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\ARCHITECTURE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:51:03.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FIX_SUMMARY.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_SUMMARY.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_SUMMARY.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_SUMMARY.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FIX_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:50:30.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AUTHENTICATION_FIXES.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\AUTHENTICATION_FIXES.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\AUTHENTICATION_FIXES.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\AUTHENTICATION_FIXES.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\AUTHENTICATION_FIXES.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:50:12.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Controllers\\EnrollmentsController.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Controllers\\EnrollmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:48:20.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UI_UX_GUIDE.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\UI_UX_GUIDE.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\UI_UX_GUIDE.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\UI_UX_GUIDE.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\UI_UX_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:42:55.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "QUICKSTART.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\QUICKSTART.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\QUICKSTART.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\QUICKSTART.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\QUICKSTART.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:31:30.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IMPLEMENTATION_SUMMARY.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\IMPLEMENTATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\IMPLEMENTATION_SUMMARY.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\IMPLEMENTATION_SUMMARY.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\IMPLEMENTATION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:31:52.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "COMPLETION_CHECKLIST.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_CHECKLIST.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_CHECKLIST.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_CHECKLIST.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\COMPLETION_CHECKLIST.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:33:30.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TROUBLESHOOTING.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\TROUBLESHOOTING.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\TROUBLESHOOTING.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\TROUBLESHOOTING.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\TROUBLESHOOTING.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:33:57.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "INDEX.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\INDEX.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\INDEX.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\INDEX.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:34:30.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PROJECT_COMPLETION.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\PROJECT_COMPLETION.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\PROJECT_COMPLETION.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\PROJECT_COMPLETION.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\PROJECT_COMPLETION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:36:42.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "STARTUP_GUIDE.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\STARTUP_GUIDE.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\STARTUP_GUIDE.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\STARTUP_GUIDE.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\STARTUP_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:36:15.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "VERIFICATION_REPORT.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\VERIFICATION_REPORT.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\VERIFICATION_REPORT.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\VERIFICATION_REPORT.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\VERIFICATION_REPORT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:35:39.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FINAL_SUMMARY.md",
+              "DocumentMoniker": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FINAL_SUMMARY.md",
+              "RelativeDocumentMoniker": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FINAL_SUMMARY.md",
+              "ToolTip": "C:\\Kiemtragiuaki\\Kiemtragiuaki\\FINAL_SUMMARY.md",
+              "RelativeToolTip": "..\\..\\Kiemtragiuaki\\Kiemtragiuaki\\FINAL_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-03T06:35:01.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAABBwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:15.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:06.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:26:39.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\appsettings.json",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\appsettings.json",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\appsettings.json",
+              "RelativeToolTip": "Kiemtragiuaki\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-03T06:05:34.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Courses\\Details.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Courses\\Details.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAABBwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:24.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Kiemtragiuaki\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABYAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-03T06:30:35.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:28:08.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MyCourses.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Enrollments\\MyCourses.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Enrollments\\MyCourses.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Enrollments\\MyCourses.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Enrollments\\MyCourses.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAABBwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:53.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Courses\\Delete.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Delete.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Courses\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:46.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Courses\\Edit.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Edit.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Courses\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:39.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Views\\Courses\\Create.cshtml",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Views\\Courses\\Create.cshtml",
+              "RelativeToolTip": "Kiemtragiuaki\\Views\\Courses\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T06:27:32.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Kiemtragiuaki.csproj",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Kiemtragiuaki.csproj",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Kiemtragiuaki.csproj",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Kiemtragiuaki.csproj",
+              "RelativeToolTip": "Kiemtragiuaki\\Kiemtragiuaki.csproj",
+              "ViewState": "AgIAABEAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-03T06:16:40.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Program.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Program.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Program.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIBJwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:06:51.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Models\\Enrollment.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\Enrollment.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:04:19.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Models\\Category.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\Category.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:04:15.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Models\\Course.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\Course.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:04:11.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AspNetUser.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\AspNetUser.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Models\\AspNetUser.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\AspNetUser.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Models\\AspNetUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T06:04:07.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Kiemtragiuaki\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Net\\Kiemtragiuaki\\Kiemtragiuaki\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Kiemtragiuaki\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAEwAAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T05:58:42.634Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

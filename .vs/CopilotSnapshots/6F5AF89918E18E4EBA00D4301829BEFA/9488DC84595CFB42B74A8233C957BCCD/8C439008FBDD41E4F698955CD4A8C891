@@ -1,0 +1,127 @@
+﻿using Kiemtragiuaki.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
+namespace Kiemtragiuaki.Data
+{
+    public class DbInitializer
+    {
+        public static async Task InitializeAsync(ApplicationDbContext context, UserManager<AspNetUser> userManager, RoleManager<IdentityRole> roleManager)
+        {
+            // Ensure database is created
+            await context.Database.MigrateAsync();
+
+            // Seed roles
+            string[] roles = { "ADMIN", "STUDENT" };
+            foreach (var role in roles)
+            {
+                if (!await roleManager.RoleExistsAsync(role))
+                {
+                    await roleManager.CreateAsync(new IdentityRole(role));
+                }
+            }
+
+            // Seed admin user
+            var adminEmail = "admin@kiemtragiuaki.com";
+            var adminUser = await userManager.FindByEmailAsync(adminEmail);
+            if (adminUser == null)
+            {
+                var admin = new AspNetUser
+                {
+                    UserName = "admin",
+                    Email = adminEmail,
+                    EmailConfirmed = true,
+                    FullName = "Administrator"
+                };
+                var result = await userManager.CreateAsync(admin, "Admin@123456");
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(admin, "ADMIN");
+                }
+            }
+
+            // Seed test student user
+            var studentEmail = "student@kiemtragiuaki.com";
+            var studentUser = await userManager.FindByEmailAsync(studentEmail);
+            if (studentUser == null)
+            {
+                var student = new AspNetUser
+                {
+                    UserName = "student",
+                    Email = studentEmail,
+                    EmailConfirmed = true,
+                    FullName = "Test Student"
+                };
+                var result = await userManager.CreateAsync(student, "Student@123456");
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(student, "STUDENT");
+                }
+            }
+
+            // Seed categories
+            if (!context.Categories.Any())
+            {
+                var categories = new List<Category>
+                {
+                    new Category { Name = "Web Development" },
+                    new Category { Name = "Mobile Development" },
+                    new Category { Name = "Data Science" },
+                    new Category { Name = "Cloud Computing" }
+                };
+                context.Categories.AddRange(categories);
+                await context.SaveChangesAsync();
+            }
+
+            // Seed courses
+            if (!context.Courses.Any())
+            {
+                var courses = new List<Course>
+                {
+                    new Course
+                    {
+                        Name = "ASP.NET Core Web Development",
+                        Credit = "3",
+                        Lecturer = "John Smith",
+                        Image = "course1.jpg",
+                        CategoryId = 1
+                    },
+                    new Course
+                    {
+                        Name = "React.js Fundamentals",
+                        Credit = "3",
+                        Lecturer = "Jane Doe",
+                        Image = "course2.jpg",
+                        CategoryId = 1
+                    },
+                    new Course
+                    {
+                        Name = "iOS App Development",
+                        Credit = "4",
+                        Lecturer = "Michael Johnson",
+                        Image = "course3.jpg",
+                        CategoryId = 2
+                    },
+                    new Course
+                    {
+                        Name = "Python for Data Science",
+                        Credit = "4",
+                        Lecturer = "Sarah Lee",
+                        Image = "course4.jpg",
+                        CategoryId = 3
+                    },
+                    new Course
+                    {
+                        Name = "Azure Cloud Solutions",
+                        Credit = "3",
+                        Lecturer = "David Wilson",
+                        Image = "course5.jpg",
+                        CategoryId = 4
+                    }
+                };
+                context.Courses.AddRange(courses);
+                await context.SaveChangesAsync();
+            }
+        }
+    }
+}

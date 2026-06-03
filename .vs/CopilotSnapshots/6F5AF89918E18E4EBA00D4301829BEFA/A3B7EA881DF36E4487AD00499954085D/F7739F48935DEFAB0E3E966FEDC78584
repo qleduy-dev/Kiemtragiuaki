@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Kiemtragiuaki.Models.Course>
+
+@{
+    ViewData["Title"] = "Find Courses";
+    var categories = ViewData["Categories"] as List<Kiemtragiuaki.Models.Category>;
+}
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h1>@ViewData["Title"]</h1>
+            <p class="text-muted">Browse and enroll in available courses</p>
+        </div>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <form method="get" class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" name="searchString" class="form-control" placeholder="Search courses by name or lecturer" value="@ViewData["SearchString"]" />
+                </div>
+                <div class="col-md-4">
+                    <select name="categoryId" class="form-select">
+                        <option value="">-- All Categories --</option>
+                        @foreach (var category in categories)
+                        {
+                            <option value="@category.Id" selected="@(ViewData["CategoryId"]?.ToString() == category.Id.ToString())">@category.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Courses Grid -->
+    <div class="row">
+        @foreach (var course in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    @if (!string.IsNullOrEmpty(course.Image))
+                    {
+                        <img src="~/images/@course.Image" class="card-img-top" style="height: 200px; object-fit: cover;" alt="@course.Name" />
+                    }
+                    else
+                    {
+                        <div style="height: 200px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                            <span class="text-muted">No Image</span>
+                        </div>
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@course.Name</h5>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <strong>Lecturer:</strong> @course.Lecturer<br />
+                                <strong>Credits:</strong> @course.Credit<br />
+                                <strong>Category:</strong> @course.Category?.Name
+                            </small>
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="@Url.Action("Details", "Courses", new { id = course.Id })" class="btn btn-sm btn-primary w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info" role="alert">
+            No courses found. Try adjusting your search criteria.
+        </div>
+    }
+</div>

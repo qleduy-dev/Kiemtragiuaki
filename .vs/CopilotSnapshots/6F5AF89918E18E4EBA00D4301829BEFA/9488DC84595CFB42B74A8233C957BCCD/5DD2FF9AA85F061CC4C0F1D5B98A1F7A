@@ -1,0 +1,198 @@
+﻿using Kiemtragiuaki.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
+namespace Kiemtragiuaki.Data
+{
+    public class DbInitializer
+    {
+        public static async Task InitializeAsync(ApplicationDbContext context, UserManager<AspNetUser> userManager, RoleManager<IdentityRole> roleManager)
+        {
+            try
+            {
+                // Ensure database is created
+                await context.Database.MigrateAsync();
+
+                // Seed roles
+                string[] roles = { "ADMIN", "STUDENT" };
+                foreach (var role in roles)
+                {
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        var result = await roleManager.CreateAsync(new IdentityRole(role));
+                        if (!result.Succeeded)
+                        {
+                            Console.WriteLine($"Failed to create role {role}");
+                        }
+                    }
+                }
+
+                // Seed admin user
+                var adminEmail = "admin@kiemtragiuaki.com";
+                var adminUser = await userManager.FindByEmailAsync(adminEmail);
+                if (adminUser == null)
+                {
+                    var admin = new AspNetUser
+                    {
+                        UserName = "admin",
+                        Email = adminEmail,
+                        EmailConfirmed = true,
+                        FullName = "Quản Trị Viên"
+                    };
+                    var result = await userManager.CreateAsync(admin, "Admin@123456");
+                    if (result.Succeeded)
+                    {
+                        var roleResult = await userManager.AddToRoleAsync(admin, "ADMIN");
+                        if (!roleResult.Succeeded)
+                        {
+                            Console.WriteLine($"Failed to add admin role");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Failed to create admin user: {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                    }
+                }
+                else
+                {
+                    // Ensure admin has ADMIN role
+                    if (!await userManager.IsInRoleAsync(adminUser, "ADMIN"))
+                    {
+                        await userManager.AddToRoleAsync(adminUser, "ADMIN");
+                    }
+                }
+
+                // Seed test student user
+                var studentEmail = "student@kiemtragiuaki.com";
+                var studentUser = await userManager.FindByEmailAsync(studentEmail);
+                if (studentUser == null)
+                {
+                    var student = new AspNetUser
+                    {
+                        UserName = "student",
+                        Email = studentEmail,
+                        EmailConfirmed = true,
+                        FullName = "Sinh Viên Test"
+                    };
+                    var result = await userManager.CreateAsync(student, "Student@123456");
+                    if (result.Succeeded)
+                    {
+                        var roleResult = await userManager.AddToRoleAsync(student, "STUDENT");
+                        if (!roleResult.Succeeded)
+                        {
+                            Console.WriteLine($"Failed to add student role");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Failed to create student user: {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                    }
+                }
+                else
+                {
+                    // Ensure student has STUDENT role
+                    if (!await userManager.IsInRoleAsync(studentUser, "STUDENT"))
+                    {
+                        await userManager.AddToRoleAsync(studentUser, "STUDENT");
+                    }
+                }
+
+                // Seed categories (Vietnamese)
+                if (!context.Categories.Any())
+                {
+                    var categories = new List<Category>
+                    {
+                        new Category { Name = "Lập Trình Web" },
+                        new Category { Name = "Lập Trình Di Động" },
+                        new Category { Name = "Khoa Học Dữ Liệu" },
+                        new Category { Name = "Điện Toán Đám Mây" }
+                    };
+                    context.Categories.AddRange(categories);
+                    await context.SaveChangesAsync();
+                }
+
+                // Seed courses (Vietnamese)
+                if (!context.Courses.Any())
+                {
+                    var courses = new List<Course>
+                    {
+                        new Course
+                        {
+                            Name = "Phát Triển Web ASP.NET Core",
+                            Credit = "3",
+                            Lecturer = "Nguyễn Văn A",
+                            Image = "course1.jpg",
+                            CategoryId = 1
+                        },
+                        new Course
+                        {
+                            Name = "React.js Cơ Bản",
+                            Credit = "3",
+                            Lecturer = "Trần Thị B",
+                            Image = "course2.jpg",
+                            CategoryId = 1
+                        },
+                        new Course
+                        {
+                            Name = "Phát Triển Ứng Dụng iOS",
+                            Credit = "4",
+                            Lecturer = "Lê Văn C",
+                            Image = "course3.jpg",
+                            CategoryId = 2
+                        },
+                        new Course
+                        {
+                            Name = "Python Cho Khoa Học Dữ Liệu",
+                            Credit = "4",
+                            Lecturer = "Phạm Thị D",
+                            Image = "course4.jpg",
+                            CategoryId = 3
+                        },
+                        new Course
+                        {
+                            Name = "Giải Pháp Cloud Azure",
+                            Credit = "3",
+                            Lecturer = "Hoàng Văn E",
+                            Image = "course5.jpg",
+                            CategoryId = 4
+                        }
+                    };
+                    context.Courses.AddRange(courses);
+                    await context.SaveChangesAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error initializing database: {ex.Message}");
+                throw;
+            }
+        }
+    }
+}
+                        Lecturer = "Michael Johnson",
+                        Image = "course3.jpg",
+                        CategoryId = 2
+                    },
+                    new Course
+                    {
+                        Name = "Python for Data Science",
+                        Credit = "4",
+                        Lecturer = "Sarah Lee",
+                        Image = "course4.jpg",
+                        CategoryId = 3
+                    },
+                    new Course
+                    {
+                        Name = "Azure Cloud Solutions",
+                        Credit = "3",
+                        Lecturer = "David Wilson",
+                        Image = "course5.jpg",
+                        CategoryId = 4
+                    }
+                };
+                context.Courses.AddRange(courses);
+                await context.SaveChangesAsync();
+            }
+        }
+    }
+}

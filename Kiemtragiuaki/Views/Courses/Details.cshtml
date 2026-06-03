@@ -1,0 +1,118 @@
+@model Kiemtragiuaki.Models.Course
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = Model.Name;
+    var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    var isEnrolled = !string.IsNullOrWhiteSpace(currentUserId) && Model.Enrollments.Any(e => e.UserId == currentUserId);
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="mb-4">
+                <a asp-action="Index" class="btn btn-outline-secondary mb-3">
+                    <i class="fas fa-arrow-left me-2"></i>Quay lại
+                </a>
+                <h1 class="fw-bold">@Model.Name</h1>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-4">
+                @if (!string.IsNullOrEmpty(Model.Image))
+                {
+                    <img src="~/images/@Model.Image" class="card-img-top" style="height: 300px; object-fit: cover;" alt="@Model.Name" />
+                }
+                else
+                {
+                    <div style="height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-book fa-5x text-white opacity-50"></i>
+                    </div>
+                }
+            </div>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Thông tin học phần</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td width="35%"><strong><i class="fas fa-chalkboard-user me-2"></i>Giảng viên:</strong></td>
+                            <td>@Model.Lecturer</td>
+                        </tr>
+                        <tr>
+                            <td><strong><i class="fas fa-coins me-2"></i>Số tín chỉ:</strong></td>
+                            <td><span class="badge bg-warning text-dark">@Model.Credit</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong><i class="fas fa-tag me-2"></i>Danh mục:</strong></td>
+                            <td>@Model.Category?.Name</td>
+                        </tr>
+                        <tr>
+                            <td><strong><i class="fas fa-users me-2"></i>Sinh viên đã đăng ký:</strong></td>
+                            <td><span class="badge bg-info">@Model.Enrollments.Count</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            @if (User.IsInRole("ADMIN"))
+            {
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>Quản trị học phần</h5>
+                    </div>
+                    <div class="card-body">
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning w-100 mb-2">
+                            <i class="fas fa-edit me-2"></i>Chỉnh sửa
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger w-100">
+                            <i class="fas fa-trash me-2"></i>Xóa học phần
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"><i class="fas fa-graduation-cap me-2"></i>Đăng ký học phần</h5>
+                    </div>
+                    <div class="card-body">
+                        @if (User.Identity?.IsAuthenticated ?? false)
+                        {
+                            @if (isEnrolled)
+                            {
+                                <div class="alert alert-success">
+                                    <i class="fas fa-check-circle me-2"></i>Bạn đã đăng ký học phần này.
+                                </div>
+                                <a asp-controller="Enrollments" asp-action="MyCourses" class="btn btn-primary w-100">
+                                    <i class="fas fa-list me-2"></i>Xem học phần của tôi
+                                </a>
+                            }
+                            else
+                            {
+                                <p class="text-muted mb-3">Nhấn nút bên dưới để đăng ký học phần này.</p>
+                                <form method="post" asp-controller="Enrollments" asp-action="Enroll">
+                                    <input type="hidden" name="courseId" value="@Model.Id" />
+                                    <button type="submit" class="btn btn-success w-100 btn-lg">
+                                        <i class="fas fa-check me-2"></i>Đăng ký ngay
+                                    </button>
+                                </form>
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-muted mb-3"><i class="fas fa-lock me-2"></i>Bạn cần đăng nhập bằng tài khoản sinh viên để đăng ký.</p>
+                            <a asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl='@($"/Courses/Details/{Model.Id}")' class="btn btn-primary w-100 btn-lg">
+                                <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
+                            </a>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

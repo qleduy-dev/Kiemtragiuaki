@@ -1,0 +1,205 @@
+﻿@{
+    ViewData["Title"] = "Trang Chủ";
+}
+
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-4">
+                    <i class="fas fa-graduation-cap me-3"></i>Hệ Thống Đăng Ký Khóa Học
+                </h1>
+                <p class="lead mb-4">Khám phá, đăng ký và quản lý các khóa học của bạn một cách dễ dàng</p>
+
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <div class="mb-4">
+                        <p class="mb-3">
+                            <i class="fas fa-user-check me-2"></i>
+                            <strong>Xin chào, @User.Identity.Name!</strong>
+                        </p>
+                        @if (User.IsInRole("STUDENT"))
+                        {
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-light btn-lg me-2" href="/Courses" role="button">
+                                    <i class="fas fa-book me-2"></i>Duyệt Khóa Học
+                                </a>
+                                <a class="btn btn-outline-light btn-lg" href="/Enrollments/MyCourses" role="button">
+                                    <i class="fas fa-list me-2"></i>Khóa Học Của Tôi
+                                </a>
+                            </div>
+                        }
+                        @if (User.IsInRole("ADMIN"))
+                        {
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-light btn-lg me-2" href="/Courses" role="button">
+                                    <i class="fas fa-cogs me-2"></i>Quản Lý Khóa Học
+                                </a>
+                                <a class="btn btn-outline-light btn-lg" href="/Courses/Create" role="button">
+                                    <i class="fas fa-plus me-2"></i>Tạo Khóa Học
+                                </a>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p class="mb-4">Đăng nhập hoặc tạo tài khoản để bắt đầu với đăng ký khóa học.</p>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-light btn-lg me-2" href="~/Identity/Account/Register" role="button">
+                            <i class="fas fa-user-plus me-2"></i>Đăng Ký Ngay
+                        </a>
+                        <a class="btn btn-outline-light btn-lg" href="~/Identity/Account/Login" role="button">
+                            <i class="fas fa-sign-in-alt me-2"></i>Đăng Nhập
+                        </a>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="display-1 mb-4">
+                    <i class="fas fa-books"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container py-5">
+    <div class="row text-center mb-5">
+        <div class="col-lg-12">
+            <h2 class="mb-4 fw-bold">
+                <i class="fas fa-star me-2" style="color: #667eea;"></i>Các Tính Năng Chính
+            </h2>
+            <p class="text-muted lead">Trải nghiệm nền tảng quản lý khóa học hiện đại</p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm feature-card">
+                <div class="card-body text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-book-open fa-3x" style="color: #667eea;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Duyệt Khóa Học</h5>
+                    <p class="card-text text-muted">
+                        Khám phá nhiều khóa học từ các danh mục khác nhau và tìm những khóa học phù hợp với bạn.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm feature-card">
+                <div class="card-body text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-check-circle fa-3x" style="color: #28a745;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Đăng Ký Dễ Dàng</h5>
+                    <p class="card-text text-muted">
+                        Đăng ký khóa học chỉ với một cú click và bắt đầu hành trình học tập của bạn ngay lập tức.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm feature-card">
+                <div class="card-body text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-chart-bar fa-3x" style="color: #ffc107;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Quản Lý Khóa Học</h5>
+                    <p class="card-text text-muted">
+                        Theo dõi các khóa học đã đăng ký và xem tất cả thông tin chi tiết bạn cần.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stats Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="stat-item">
+                    <h3 class="fw-bold mb-2" style="color: #667eea;">
+                        <i class="fas fa-users me-2"></i>1000+
+                    </h3>
+                    <p class="text-muted">Sinh Viên Hoạt Động</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-item">
+                    <h3 class="fw-bold mb-2" style="color: #667eea;">
+                        <i class="fas fa-book me-2"></i>100+
+                    </h3>
+                    <p class="text-muted">Khóa Học Có Sẵn</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-item">
+                    <h3 class="fw-bold mb-2" style="color: #667eea;">
+                        <i class="fas fa-chalkboard-user me-2"></i>50+
+                    </h3>
+                    <p class="text-muted">Giáo Viên Giỏi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+@if (!(User.Identity?.IsAuthenticated ?? false))
+{
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="card shadow-lg border-0" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <div class="card-body p-5 text-center">
+                        <h3 class="card-title fw-bold mb-3">
+                            <i class="fas fa-rocket me-2"></i>Bắt Đầu Học Tập Ngay Hôm Nay
+                        </h3>
+                        <p class="card-text mb-4">
+                            Gia nhập hàng nghìn sinh viên khác đã đăng ký các khóa học của chúng tôi.
+                        </p>
+                        <a href="~/Identity/Account/Register" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-user-plus me-2"></i>Tạo Tài Khoản
+                        </a>
+                        <a href="~/Identity/Account/Login" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Đăng Nhập
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .feature-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+        border-radius: 50%;
+    }
+
+    .stat-item {
+        padding: 20px;
+    }
+</style>

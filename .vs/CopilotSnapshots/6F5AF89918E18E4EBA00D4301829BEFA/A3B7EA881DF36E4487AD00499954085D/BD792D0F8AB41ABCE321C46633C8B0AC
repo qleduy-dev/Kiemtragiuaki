@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Kiemtragiuaki.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "My Courses";
+}
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <h1>@ViewData["Title"]</h1>
+            <p class="text-muted">View and manage your enrolled courses</p>
+        </div>
+    </div>
+
+    @if (Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Category</th>
+                        <th>Lecturer</th>
+                        <th>Credits</th>
+                        <th>Enrolled Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var enrollment in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("Details", "Courses", new { id = enrollment.CourseId })">
+                                    @enrollment.Course?.Name
+                                </a>
+                            </td>
+                            <td>@enrollment.Course?.Category?.Name</td>
+                            <td>@enrollment.Course?.Lecturer</td>
+                            <td>@enrollment.Course?.Credit</td>
+                            <td>@enrollment.EnrollDate.ToString("MMM dd, yyyy")</td>
+                            <td>
+                                <form method="post" asp-controller="Enrollments" asp-action="Unenroll" style="display: inline;">
+                                    <input type="hidden" name="enrollmentId" value="@enrollment.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to unenroll?');">Unenroll</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            <strong>No enrolled courses yet.</strong> <a href="@Url.Action("Index", "Courses")">Browse available courses</a>
+        </div>
+    }
+
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "Courses")" class="btn btn-primary">Browse More Courses</a>
+    </div>
+</div>

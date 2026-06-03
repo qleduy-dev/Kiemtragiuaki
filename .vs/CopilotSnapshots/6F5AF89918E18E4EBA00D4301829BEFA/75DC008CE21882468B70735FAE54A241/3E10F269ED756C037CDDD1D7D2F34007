@@ -1,0 +1,12 @@
+﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=DATOSU\\SQLEXPRESS;Database=Kiemtragiuaki;User Id=DATOSU\\huynh;Integrated Security=true;Encrypt=Optional;Trust Server Certificate=true"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
